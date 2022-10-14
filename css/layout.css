@@ -2293,6 +2293,7 @@
 }
 
 .box-items .box-item:hover .image .info {
+  padding: 0;
   opacity: 1;
   transform: scale(1, 1);
   -webkit-transform: scale(1, 1);
@@ -2315,8 +2316,12 @@
 }
 
 .box-items .box-item .image a img {
+  /* width: 100%;
+  height: auto; */
   width: 100%;
-  height: auto;
+  height: 200px;
+  object-fit: cover;
+  object-position: top left;
   position: relative;
   top: 0;
 }
@@ -2828,7 +2833,6 @@ object {
 }
 
 .popup-box .image {
-  height: 560px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2926,4 +2930,17 @@ object {
 .popup-box .image {
   font-size: 0;
   line-height: 0;
+}
+
+.box-items .box-item .image .info .centrize {
+  background: #00000075 !important;
+}
+.mb-1 {
+  margin-bottom: 10px;
+}
+.filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
